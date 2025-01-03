@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:elevation="5dp"
+        android:background="@color/blue_dark">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:contentDescription="@string/back_btn"
+            android:padding="16dp"
+            app:tint="@color/white"
+            android:transitionName="fabTransition"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_placeholder"
+        android:layout_below="@id/appBarLayout"
+        android:contentDescription="@string/image_story"
+        />
+
+    <TextView
+        android:id="@+id/tv_image_required"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/image_is_required"
+        android:textColor="@color/error_red"
+        android:visibility="visible"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/iv_photo"/>
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_image_required"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="100dp"
+        android:backgroundTint="@color/blue_dark"
+        android:text="@string/camera"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btn_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_image_required"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/blue_dark"
+        android:text="@string/gallery"
+        android:textColor="@android:color/white"
+        android:layout_toEndOf="@id/btn_camera"
+        />
+
+    <EditText
+        android:id="@+id/ed_add_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_camera"
+        android:layout_marginTop="16dp"
+        android:hint="@string/story_description"
+        android:background="@android:drawable/edit_text"
+        android:padding="28dp"
+        android:layout_margin="16dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_add_description"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/upload_btn" />
+
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        tools:text="Lat: -6.1234, Lon: 106.8456" />
+
+    <ProgressBar
+        android:id="@+id/uploadProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

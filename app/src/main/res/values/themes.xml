@@ -1,0 +1,18 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyStory" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#415f91</item>
+        <item name="colorPrimaryVariant">#4c6359</item>
+        <item name="colorOnPrimary">#ffffff</item> <!-- Text color on primary -->
+        <item name="colorSecondary">#cee9dc</item>
+        <item name="colorSecondaryVariant">#d5dbd7</item>
+        <item name="colorOnSecondary">#000000</item> <!-- Text color on secondary -->
+        <item name="backgroundColor">#ffffff</item> <!-- Background color -->
+        <item name="colorOnBackground">#2c322f</item> <!-- Text color on background -->
+        <item name="colorSurface">#ffffff</item> <!-- Surface color -->
+        <item name="colorOnSurface">#2c322f</item> <!-- Text color on surface -->
+    </style>
+
+    <style name="Theme.MyStory" parent="Base.Theme.MyStory" />
+</resources>

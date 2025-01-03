@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@android:color/white">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="@string/login"/>
+
+    <com.example.mystory.helper.EmailEditText
+        android:id="@+id/ed_login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="@string/email"
+        android:autofillHints="emailAddress"
+        android:importantForAutofill="yes"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text" />
+
+    <com.example.mystory.helper.PasswordEditText
+        android:id="@+id/ed_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        android:importantForAutofill="yes"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_btn"
+        android:layout_marginTop="24dp"
+        android:textColor="@android:color/white"
+        android:minHeight="48dp"
+        android:transitionName="loginButton"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:textSize="16sp"
+        android:text="@string/login_register"
+        android:textColor="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="4dp"
+        android:textSize="16sp"
+        android:text="@string/register_btn"
+        android:textColor="@android:color/darker_gray"
+        android:transitionName="registerText"/>
+
+</LinearLayout>

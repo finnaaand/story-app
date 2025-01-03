@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MyStory</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_btn">Sign In</string>
+    <string name="logout_btn">Logout</string>
+    <string name="back_btn">Back</string>
+    <string name="name">Name</string>
+    <string name="register_btn">Register</string>
+    <string name="retry_btn">Retry</string>
+
+    <string name="login">Login to your Account</string>
+    <string name="login_register">Don\'t have an account?</string>
+    <string name="register">Create your new Account</string>
+    <string name="email_error">Email is invalid</string>
+    <string name="password_error">Password at least 8 character</string>
+
+    <string name="image_story">Image</string>">
+    <string name="story_name">Story Title</string>
+    <string name="story_description">Description</string>
+    <string name="upload_btn">Upload</string>
+    <string name="add_story">Add Story</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="maps_button">Maps</string>
+    <string name="image_is_required">*Image is required</string>
+
+</resources>
